@@ -1,0 +1,80 @@
+<html>
+    <body bgcolor=#FFEBCD>
+    
+     
+     
+    
+     
+        <center>
+
+        <h1> Heart Disease Detector KNN</h1><br>
+        
+        <table>
+            <tr>
+              <th>Feature</th>
+              <th>What it means</th>
+            </tr>
+            <tr>
+             <td>ST_Slope_Up</td>
+             <td>the slope of the peak exercise ST segment was upwards</td>
+            </tr>
+            <tr>
+             <td>ST_Slope_Flat</td>
+             <td>the slope of the peak exercise ST segment was flat</td>
+            </tr>
+            <tr>
+             <td>ExcerciseAngine_Y</td>
+             <td>exercise induced angina (1 = yes; 0 = no)</td>
+            </tr>
+            <tr>
+             <td>Oldpeak</td>
+             <td>ST depression induced by exercise relative to rest</td>
+            </tr>
+            <tr>
+             <td>ChestPainType_ATA</td>
+             <td>ChestPainType that is atypical angina</td>
+            </tr>
+            <tr>
+             <td>MaxHR</td>
+             <td>maximum heart rate</td>
+            </tr>
+            <tr>
+             <td>Sex_M</td>
+             <td>If person is male(1 = yes; 0 = no)</td>
+            </tr>
+          
+       
+            
+          </table>
+          <br></br>
+          <br></br>
+          
+
+        <form method="POST", action="{{url_for('home')}}">
+           <b> ST_Slope_Up :  <input type="text", name="a", placeholder="enter 1"> <br><br>
+            ST_Slope_Flat :  <input type="text", name="b", placeholder="enter 2"> <br><br>
+            ExcerciseAngine_Y :  <input type="text", name="c", placeholder="enter 3"> <br><br>
+            Oldpeak : <input type="text", name="d", placeholder="enter 4"> <br><br>
+            ChestPainType_ATA :  <input type="text", name="e", placeholder="enter 5"> <br><br>
+            MaxHR :  <input type="text", name="f", placeholder="enter 6"> <br><br>
+            Sex_M :  <input type="text", name="g", placeholder="enter 7"> <br><br></b>
+            
+            
+            <input type="submit" , value='predict!' >
+        </form>
+
+        <img src="https://www.bhf.org.uk/-/media/news-images/2022/august/high-tech-heart-640-x-410.jpg?h=65%25&w=100%25&rev=438e06b33b22403cb338a98263d00d4c&hash=C97704C9EAFC16F2C4E0373B223AC3E5" alt="Heart">
+        
+    </center>
+
+
+
+
+
+
+    </body>
+</html>
+
+
+
+
